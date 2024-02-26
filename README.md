@@ -28,13 +28,20 @@ Alternatively you can download a pre-built binary from [https://github.com/proto
 ```
 protoc --go_out=. --go_opt=paths=source_relative \
   --go-grpc_out=. --go-grpc_opt=paths=source_relative \
-  Proto/mail.proto
+  proto/mail.proto
 ```
 
 ### How to start
 
 - `go mod tidy`
 - `go run main.go`
+
+### Configuration
+
+- you may set environment variables:
+  - `MAILINGLIST_DB=` - filepath of a sqlite database (default is **_`./_data/list.db`_**)
+  - `MAILINGLIST_BIND_JSON=` - address and port to listen (default is **_`localhost:3000`_**)
+  - `MAILINGLIST_BIND_GRPC=` - address and port to listen (default is **_`localhost:3001`_**)
 
 ### Kudos
 
