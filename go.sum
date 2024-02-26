@@ -1,0 +1,6 @@
+github.com/mattn/go-sqlite3 v1.14.22 h1:2gZY6PC6kBnID23Tichd1K+Z0oS6nE/XwU+Vz/5o4kU=
+github.com/mattn/go-sqlite3 v1.14.22/go.mod h1:Uh1q+B4BYcTPb+yiD3kU8Ct7aC0hY9fxUwlHK0RXw+Y=
+go.wit.com/dev/alexflint/arg v1.4.5 h1:asDx5f9IlfpknKjPBqqb2qndE91Pbo7ZDkWUgddfMhY=
+go.wit.com/dev/alexflint/arg v1.4.5/go.mod h1:wnWc+c6z8kSdDKYriMf6RpM+FiXmo5RYp/t4FNi0MU0=
+go.wit.com/dev/alexflint/scalar v1.2.1 h1:loXOcbVnd+8YeJRLey+XXidecBiedMDO00zQ26TvKNs=
+go.wit.com/dev/alexflint/scalar v1.2.1/go.mod h1:+rYsfxqdI2cwA8kJ7GCMwWbNJvfvWUurOCXLiwdTtSs=
