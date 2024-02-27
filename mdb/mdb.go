@@ -80,14 +80,14 @@ func GetEmailEntry(db *sql.DB, email string) (*EmailEntry, error) {
 	}
 	defer rows.Close()
 	for rows.Next() {
-		return emailEntryFromRow(rows) //taking first matched row
+		return emailEntryFromRow(rows) //taking first matched row as email should unique
 	}
 	return nil, nil
 }
 
 func UpdateEmailEntry(db *sql.DB, emailEntry *EmailEntry) error {
 	if emailEntry.ConfirmedAt == nil || emailEntry.OptOut {
-		errMsg := "confirmedAt and optOut fields shoud not be empty"
+		errMsg := "confirmedAt and optOut fields should not be empty"
 		log.Printf("%s %v", errMsg, emailEntry)
 		return errors.New(errMsg)
 	}

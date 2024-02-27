@@ -34,11 +34,12 @@ protoc --go_out=. --go_opt=paths=source_relative \
 ### How to start
 
 - `go mod tidy`
-- `go run main.go`
+- `go run ./server` - to start the server
+- `go run ./client` - to execute the client
 
 ### Configuration
 
-- you may set environment variables:
+- you may set the environmental variables:
   - `MAILINGLIST_DB=` - filepath of a sqlite database (default is **_`./_data/list.db`_**)
   - `MAILINGLIST_BIND_JSON=` - address and port to listen (default is **_`localhost:3000`_**)
   - `MAILINGLIST_BIND_GRPC=` - address and port to listen (default is **_`localhost:3001`_**)
